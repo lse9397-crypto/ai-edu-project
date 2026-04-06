@@ -129,6 +129,7 @@
         <button id="btn-page-b" onclick="switchPage('b')">라이브러리</button>
     </nav>
 
+    <!-- [PAGE A] 대한민국 인공지능 교육분야 행동계획 -->
     <div id="page-a" class="page-content active">
         <header id="hero" class="text-white px-6 overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-full opacity-30">
@@ -145,6 +146,7 @@
 
         <div class="max-w-6xl mx-auto px-6 py-24 relative z-20">
             
+            <!-- Category 01 -->
             <section id="topic1" class="mb-32">
                 <div class="flex items-center gap-4 mb-12 reveal">
                     <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-bold text-2xl shadow-lg">01</div>
@@ -168,6 +170,7 @@
                 </div>
             </section>
 
+            <!-- Category 02 -->
             <section id="topic2" class="mb-32">
                 <div class="flex items-center gap-4 mb-12 reveal">
                     <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold text-2xl shadow-lg">02</div>
@@ -191,6 +194,7 @@
                 </div>
             </section>
 
+            <!-- Category 03 -->
             <section id="topic3" class="mb-32">
                 <div class="flex items-center gap-4 mb-12 reveal">
                     <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-2xl shadow-lg">03</div>
@@ -214,6 +218,7 @@
                 </div>
             </section>
 
+            <!-- AI Assistant Section -->
             <section id="ai-playground" class="bg-indigo-950 p-12 rounded-[3.5rem] text-white shadow-2xl reveal">
                 <div class="flex items-center gap-5 mb-10">
                     <div class="w-12 h-12 rounded-2xl bg-indigo-500 flex items-center justify-center font-bold text-2xl">✨</div>
@@ -233,6 +238,7 @@
         </div>
     </div>
 
+    <!-- [PAGE B] 라이브러리 -->
     <div id="page-b" class="page-content">
         <header class="bg-slate-900 text-white pt-48 pb-24 text-center">
             <h1 class="text-5xl font-black mb-6">데이터 라이브러리</h1>
@@ -246,6 +252,7 @@
         </div>
     </div>
 
+    <!-- Word Definition Modal -->
     <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
         <div class="modal-card bg-white p-10 rounded-[3rem] shadow-2xl w-[90%] max-w-md border border-slate-100" onclick="event.stopPropagation()">
             <div class="mb-6">
@@ -258,7 +265,7 @@
     </div>
 
     <script>
-        const apiKey = "여기에_사용자님의_Gemini_API_Key를_넣어주세요"; 
+        const apiKey = ""; 
         const modelName = "gemini-2.5-flash-preview-09-2025";
 
         const dictionary = {
@@ -299,7 +306,7 @@
                 resDiv.innerText = data.candidates?.[0]?.content?.parts?.[0]?.text || "답변을 불러올 수 없습니다.";
                 resDiv.classList.remove('italic');
             } catch (e) {
-                resDiv.innerText = "오류가 발생했습니다. API 키가 유효한지 확인하고 다시 시도해 주세요.";
+                resDiv.innerText = "오류가 발생했습니다. 잠시 후 다시 시도해 주세요.";
             }
         }
 
