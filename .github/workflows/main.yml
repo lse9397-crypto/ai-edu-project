@@ -2,19 +2,23 @@ name: Daily AI Update
 on:
   schedule:
     - cron: '0 22 * * *' # 한국 시간 오전 7시
-  workflow_dispatch: # 수동 실행 버튼
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 아래 env 부분을 추가하면 경고 메시지가 사라집니다.
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # v3에서 v4로 업데이트
+        uses: actions/checkout@v4 
       
       - name: Python Setup
-        uses: actions/setup-python@v5 # v4에서 v5로 업데이트
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # 조금 더 안정적인 최신 버전 추천
+          python-version: '3.11'
           
       - name: Install Libraries
         run: pip install requests beautifulsoup4
