@@ -1,0 +1,26 @@
+name: Daily AI Update
+on:
+  schedule:
+    - cron: '0 22 * * *' # UTC 22시는 한국 시간(KST) 오전 7시입니다.
+  workflow_dispatch: # 직접 실행 버튼 활성화
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Python Setup
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install Libraries
+        run: pip install requests beautifulsoup4
+      - name: Run Script
+        run: python update_news.py
+      - name: Update GitHub Data
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          git add data.json
+          git commit -m "Auto Update: Latest AI News" || echo "No changes"
+          git push
