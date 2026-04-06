@@ -1,4 +1,4 @@
-name:name: Daily AI Update
+name: Daily AI Update
 on:
   schedule:
     - cron: '0 22 * * *' # 한국 시간 오전 7시
