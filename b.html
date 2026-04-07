@@ -8,16 +8,16 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap');
         body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; }
-        .filter-btn.active { background-color: #2563eb !important; color: white !important; shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
+        .filter-btn.active { background-color: #2563eb; color: white; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
         .card-anim { transition: transform 0.2s ease, box-shadow 0.2s ease; }
         .card-anim:hover { transform: translateY(-4px); box-shadow: 0 12px 20px rgba(0,0,0,0.05); }
     </style>
 </head>
 <body class="text-slate-900 pb-20">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-bottom border-slate-100">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="font-black text-2xl text-blue-600 tracking-tighter">AI EDU.</div>
+            <div class="font-black text-2xl text-blue-600">AI EDU.</div>
             <div class="flex gap-4">
                 <a href="index.html" class="px-5 py-2.5 rounded-xl text-sm font-bold text-slate-500 hover:bg-slate-50 transition-all">← 메인으로</a>
             </div>
@@ -41,29 +41,73 @@
         </div>
 
         <div id="libraryList" class="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
-            <p class="text-center py-20 text-slate-400 col-span-full font-medium">데이터를 실시간으로 불러오는 중입니다...</p>
+            <p class="text-center py-20 text-slate-400 col-span-full">데이터를 불러오는 중입니다...</p>
         </div>
     </div>
 
     <script>
-        // 전역 데이터 저장소
-        let libraryData = { article: [], paper: [], book: [] };
+    let libraryData = { article: [], paper: [], book: [] };
 
-        // 1. 데이터 가져오기
-        async function fetchLatestData() {
-            try {
-                // 캐시 방지를 위해 랜덤 쿼리스트링(?v=) 추가
-                const response = await fetch('data.json?v=' + new Date().getTime());
-                if (!response.ok) throw new Error('파일 로드 실패');
-                
-                const data = await response.json();
-                
-                // 데이터 매핑 (파이썬에서 저장한 키값과 맞춤)
-                libraryData.article = data.article || data.news || [];
-                libraryData.paper = data.paper || [];
-                libraryData.book = data.book || [];
+    async function fetchLatestData() {
+        try {
+            // 캐시 방지를 위해 랜덤 타임스탬프를 붙여 data.json을 불러옵니다.
+            const response = await fetch('data.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error('데이터 로드 실패');
+            
+            const data = await response.json();
+            
+            // 데이터 유무와 상관없이 구조를 할당 (없으면 빈 배열)
+            libraryData.article = data.article || data.news || [];
+            libraryData.paper = data.paper || [];
+            libraryData.book = data.book || [];
 
-                // 처음에는 '전체' 탭을 보여줍니다.
-                filterLibrary('all');
-            } catch (error) {
-                console.error("Fetch
+            // 초기 화면으로 '기사' 탭 출력
+            filterLibrary('article');
+        } catch (error) {
+            console.error("Error:", error);
+            document.getElementById('libraryList').innerHTML = 
+                "<p class='col-span-full text-center py-20 text-slate-400'>데이터를 불러올 수 없습니다. 잠시 후 새로고침 해주세요.</p>";
+        }
+    }
+
+    function filterLibrary(category) {
+        // 모든 필터 버튼 초기화
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active', 'bg-white', 'text-blue-600', 'shadow-sm');
+            btn.classList.add('text-slate-500');
+        });
+
+        // 현재 선택된 버튼 활성화 (id가 f-news인 경우와 f-article인 경우 모두 대응)
+        const activeBtn = document.getElementById(`f-${category}`) || document.getElementById('f-news');
+        if (activeBtn) {
+            activeBtn.classList.add('active', 'bg-white', 'text-blue-600', 'shadow-sm');
+            activeBtn.classList.remove('text-slate-500');
+        }
+
+        const list = document.getElementById('libraryList');
+        list.innerHTML = "";
+        
+        const items = libraryData[category] || [];
+
+        // 데이터 반복 출력
+        items.forEach(item => {
+            const card = `
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-100 flex flex-col gap-4 shadow-sm transition-all hover:shadow-md">
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">${item.source} · ${item.date}</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 text-slate-900">${item.title}</h3>
+                        <p class="text-slate-500 leading-relaxed mb-6">${item.summary || item.description}</p>
+                        ${item.link !== '#' ? 
+                            `<a href="${item.link}" target="_blank" class="inline-block bg-slate-900 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-600 transition-colors">원문 보기</a>` 
+                            : `<span class="inline-block bg-slate-100 text-slate-400 px-6 py-3 rounded-xl font-bold text-sm">준비 중</span>`
+                        }
+                    </div>
+                </div>`;
+            list.insertAdjacentHTML('beforeend', card);
+        });
+    }
+
+    window.onload = fetchLatestData;
+</script>
+</body>
+</html>
