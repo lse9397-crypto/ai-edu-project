@@ -279,7 +279,7 @@
             "디지털 리터러시 교육": "디지털 환경에서 정보를 이해, 비판적으로 평가, 활용 및 생산할 수 있는 능력을 기르는 교육입니다."
         };
 
-       function switchPage(pageId) {
+        function switchPage(pageId) function switchPage(pageId) {
     // '라이브러리' 버튼을 눌렀을 때 b.html로 이동
     if (pageId === 'b') {
         window.location.href = 'b.html'; 
@@ -300,6 +300,7 @@
     
     window.scrollTo(0, 0);
 }
+
         async function askAI() {
             const query = document.getElementById('aiQuery').value;
             const resDiv = document.getElementById('aiResponse');
