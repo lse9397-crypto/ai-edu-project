@@ -1,22 +1,22 @@
 {
-    "news": [
+    "article": [
         {
-            "title": "AI 교육 최신 트렌드를 확인하세요",
+            "title": "새로운 AI 교육 소식을 찾고 있습니다",
             "date": "2026.04.07",
             "source": "시스템 알림",
-            "summary": "현재 자동 수집 기능이 대기 중입니다. 곧 최신 기사가 업데이트됩니다.",
-            "link": "https://www.naver.com",
+            "summary": "현재 새로운 기사를 수집 중이거나 일시적인 연결 지연이 발생했습니다. 잠시 후 다시 확인해 주세요.",
+            "link": "#",
             "category": "article",
             "type": "article"
         }
     ],
-    "article": [
+    "news": [
         {
-            "title": "AI 교육 최신 트렌드를 확인하세요",
+            "title": "새로운 AI 교육 소식을 찾고 있습니다",
             "date": "2026.04.07",
             "source": "시스템 알림",
-            "summary": "현재 자동 수집 기능이 대기 중입니다. 곧 최신 기사가 업데이트됩니다.",
-            "link": "https://www.naver.com",
+            "summary": "현재 새로운 기사를 수집 중이거나 일시적인 연결 지연이 발생했습니다. 잠시 후 다시 확인해 주세요.",
+            "link": "#",
             "category": "article",
             "type": "article"
         }
