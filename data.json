@@ -1,44 +1,296 @@
 {
     "article": [
         {
-            "title": "최신 AI 교육 기사를 찾고 있습니다",
+            "title": "\"해당 답안 B등급 판정\"⋯교육 현장서 서술형에 'AI 채점 방식' 도입",
             "date": "2026.04.07",
-            "source": "시스템 알림",
-            "summary": "현재 새로운 교육 기사를 수집 중입니다. 잠시 후 다시 확인해 주세요.",
-            "link": "#",
+            "source": "v.daum.net",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4di1iNFJCeTVoQVBVNlViMzlBWF9HZTJ3ZzRoeDVYMzY4TXVEUThZVEl5dExUbllFWElyV000bTF2S0lVWElYd0xGMENNSHc?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "봉화군, AI 교육으로 농업 혁신 가속화",
+            "date": "2026.04.07",
+            "source": "브릿지경제",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KZDUxRmhEeHhzem91TVFyck45TzBBeVpVR3lfZlJaZl9tMTdsOEdhRTNhUVNGR1FOU084NGRUY0VESXJla1R2eTRvMmFsTC03SzBBSWRLX2Y4Zw?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "[에듀플러스]이해근 고려대 교수, “AI시대 기존 교육 짜깁기는 필패”…전 학문 'AI 입은 인재 양성'이 승부처",
+            "date": "2026.04.07",
+            "source": "전자신문",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5uRmpCNXpPTk00Zng0Ujl0VDhZTGhkT2pPODA1akg1MnRMMEdhMGdhc2JtSE51aURtSmMtTVhuM2NPUnRhNmRCYlAwc0JQUQ?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "세종SW교육체험센터, 초6 대상 SW·AI 교육 본격 운영",
+            "date": "2026.04.07",
+            "source": "뉴데일리 충청세종",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5NNmUteUZGVU12RHE3Rzl4cjV1RlBkVjFpSHNxNm1KSFZmNXdTQlo0X0hMaUhpLXNRTEpYN3R3Z1ozRW9hZTBaU3J1UmY1ZUpGdlRlbnVNYUw4Z0w3Y0Z3Sk1jWXhqRWkzTy1XZ1VfeXNHNGI2UlJDeTNn?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "[현장에서] 시험장에 들어온 AI, 교육은 문 앞에 서 있다",
+            "date": "2026.04.07",
+            "source": "네이트",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FMnZ1MEswelcyeW1NSzh2WU9iQ01oTlI2N05zSzMxVktGVHgwLUJjcEtxWUFEZlRmb05IMmNyNE1FRmMzZEJYWm90Qy1yMjFoZFc0?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "국내 최대 AI 교육 플랫폼으로… 구광모 ‘인재 육성 철학’ 결실",
+            "date": "2026.04.07",
+            "source": "세계일보",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE93ZzRsSFNmbi13R193TkkzdmtzRUxrSGE0Z3ZpblMyYzYzWXlXemFSSmVZNG8xX210cDhEMm5vNTUtRGZZNVRxSTNlUUJrNXpWWU91X09oemnSAVRBVV95cUxPSDE1NkpPNzMtUE5WbHJwMTdqOWdQRTlMZVVENW42UUNLV3hCRVNTQ1J1a0VCTGRzT1h4MnFHZlZzQktwWE9jNTI3Zy15RHhLU2pwWE0?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "“고급 AI 일자리 1%뿐, 대다수 실용교육 필요”…AI 성패는 ‘노동자 참여’",
+            "date": "2026.04.07",
+            "source": "한겨레",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0ySVVtZUpReFJ3SERCbEVxQmNsOXlTSUVsMmZPSHZkQWtreEVzcmpJbU1YSHdVLVVCd2VJcS1KdlVoREdGUWp1bVdNNE0yVmhubWV4d2JpRUpLOXJUWUU5SUgtRm0?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "서·논술형 대입이 온다…AI시대, 문해력 어떻게 키울까",
+            "date": "2026.04.07",
+            "source": "서울신문",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZWZkdk0weTM1dFdoejBaNVc1RTBlZk1TQmJBVXVmanhNOXByOWxBTEE0NmRyWjZ3Q2RpNmVYV0JsdnVvZU5XVFZwbEhyYWNhUlBCY1VlVVVQd2E3R1pTSG5HNWdiQUxpaVdRRFdPNl9zNWRnRWJRMlAwcy1QSjdNYXBSRQ?oc=5",
             "category": "article",
             "type": "article"
         }
     ],
     "news": [
         {
-            "title": "최신 AI 교육 기사를 찾고 있습니다",
+            "title": "\"해당 답안 B등급 판정\"⋯교육 현장서 서술형에 'AI 채점 방식' 도입",
             "date": "2026.04.07",
-            "source": "시스템 알림",
-            "summary": "현재 새로운 교육 기사를 수집 중입니다. 잠시 후 다시 확인해 주세요.",
-            "link": "#",
+            "source": "v.daum.net",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4di1iNFJCeTVoQVBVNlViMzlBWF9HZTJ3ZzRoeDVYMzY4TXVEUThZVEl5dExUbllFWElyV000bTF2S0lVWElYd0xGMENNSHc?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "봉화군, AI 교육으로 농업 혁신 가속화",
+            "date": "2026.04.07",
+            "source": "브릿지경제",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5KZDUxRmhEeHhzem91TVFyck45TzBBeVpVR3lfZlJaZl9tMTdsOEdhRTNhUVNGR1FOU084NGRUY0VESXJla1R2eTRvMmFsTC03SzBBSWRLX2Y4Zw?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "[에듀플러스]이해근 고려대 교수, “AI시대 기존 교육 짜깁기는 필패”…전 학문 'AI 입은 인재 양성'이 승부처",
+            "date": "2026.04.07",
+            "source": "전자신문",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5uRmpCNXpPTk00Zng0Ujl0VDhZTGhkT2pPODA1akg1MnRMMEdhMGdhc2JtSE51aURtSmMtTVhuM2NPUnRhNmRCYlAwc0JQUQ?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "세종SW교육체험센터, 초6 대상 SW·AI 교육 본격 운영",
+            "date": "2026.04.07",
+            "source": "뉴데일리 충청세종",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5NNmUteUZGVU12RHE3Rzl4cjV1RlBkVjFpSHNxNm1KSFZmNXdTQlo0X0hMaUhpLXNRTEpYN3R3Z1ozRW9hZTBaU3J1UmY1ZUpGdlRlbnVNYUw4Z0w3Y0Z3Sk1jWXhqRWkzTy1XZ1VfeXNHNGI2UlJDeTNn?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "[현장에서] 시험장에 들어온 AI, 교육은 문 앞에 서 있다",
+            "date": "2026.04.07",
+            "source": "네이트",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FMnZ1MEswelcyeW1NSzh2WU9iQ01oTlI2N05zSzMxVktGVHgwLUJjcEtxWUFEZlRmb05IMmNyNE1FRmMzZEJYWm90Qy1yMjFoZFc0?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "국내 최대 AI 교육 플랫폼으로… 구광모 ‘인재 육성 철학’ 결실",
+            "date": "2026.04.07",
+            "source": "세계일보",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE93ZzRsSFNmbi13R193TkkzdmtzRUxrSGE0Z3ZpblMyYzYzWXlXemFSSmVZNG8xX210cDhEMm5vNTUtRGZZNVRxSTNlUUJrNXpWWU91X09oemnSAVRBVV95cUxPSDE1NkpPNzMtUE5WbHJwMTdqOWdQRTlMZVVENW42UUNLV3hCRVNTQ1J1a0VCTGRzT1h4MnFHZlZzQktwWE9jNTI3Zy15RHhLU2pwWE0?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "“고급 AI 일자리 1%뿐, 대다수 실용교육 필요”…AI 성패는 ‘노동자 참여’",
+            "date": "2026.04.07",
+            "source": "한겨레",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0ySVVtZUpReFJ3SERCbEVxQmNsOXlTSUVsMmZPSHZkQWtreEVzcmpJbU1YSHdVLVVCd2VJcS1KdlVoREdGUWp1bVdNNE0yVmhubWV4d2JpRUpLOXJUWUU5SUgtRm0?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
+            "title": "서·논술형 대입이 온다…AI시대, 문해력 어떻게 키울까",
+            "date": "2026.04.07",
+            "source": "서울신문",
+            "summary": "'AI 교육'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZWZkdk0weTM1dFdoejBaNVc1RTBlZk1TQmJBVXVmanhNOXByOWxBTEE0NmRyWjZ3Q2RpNmVYV0JsdnVvZU5XVFZwbEhyYWNhUlBCY1VlVVVQd2E3R1pTSG5HNWdiQUxpaVdRRFdPNl9zNWRnRWJRMlAwcy1QSjdNYXBSRQ?oc=5",
             "category": "article",
             "type": "article"
         }
     ],
     "paper": [
         {
-            "title": "관력 학술 논문을 분석 중입니다",
+            "title": "그림책 가 AI 리터러시 교육 교재가 된 이유",
             "date": "2026.04.07",
-            "source": "시스템 알림",
-            "summary": "AI 리터러시 및 교육 관련 최신 논문을 라이브러리에 업데이트 중입니다.",
-            "link": "#",
+            "source": "브런치",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YcnZXYnN5UFhrOUp3MWpkVVhDZmhZTlFrb0NGLVFQVnBOX2hzWlV4bUFqY0JpUmQ1UFYtaDVObXNYb25RU0V2al9sVVZZZw?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "[소통광장-디지털유대]④ \"AI와의 감정 교류는 양날의 검, 제도·교육적 논의 필요\"",
+            "date": "2026.04.07",
+            "source": "뉴스포스트",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE96aEFpelAySXhuNEJ0Vmk1ekE0d1JfUXcyZG1tUG9jOWxZM2xvdmZjZHJpVVR5U2k1VWJrOVA2M0dTRnVSM1N1TE1mUXNHcC1IV3gta2d4U282TUdiS3lTcWJtcTZmRkktdEE?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "챗GPT에게 숙제 맡겼다가 낭패 본 고등학생들의 고백",
+            "date": "2026.04.07",
+            "source": "AI매터스",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE53aUI0SGhBNFlDVkNLcHpJYmtoWGZZUzV5ME9ZNzBUTjlmaHJ2U2VrVkloa0dDdG9xV3Z6akZfNnBiM2NxaXZhbDcwTkwyandQcDhHNVJNWGs?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "심리학, 특이점이 온다",
+            "date": "2026.04.07",
+            "source": "브런치",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE41bmJoTEgyUk4xM0pZTmFyUlJrZ3Y2elNoWWZ0ZFNiX0NiVzMteXFBNU5kS0o5Q2lsRWI0bmJ4XzJmLXEyd2dqMGVxdw?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "[AI & 퍼스펙티브] AI 리터러시와 교육",
+            "date": "2026.04.07",
+            "source": "투데이신문",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wUFdLUmtBRWZDWmRidDZYNGd2a2xjZjdfNkREYnJfUVh3bC1JNlRjaTZoVGY1TXpMM0podEJsT0ljRjFzQVdHTDBPWWJFOVpybmxGYktsdF9HNW83QkU4Vmdiem03VFZTaURV0gFvQVVfeXFMTmpHdEEtS0RjeFpJaXp1S19WdG1lU3o1a3dqZ2dFTTJTY3Q4UFJteHpCdzhTMFJTWm80QVBpRFFoNzdHQ2lmc3lmNDEwZUdLTnlPLTdZZmpnTGRkcmFsVWR3LUxVc2gwQW9xN1VDRnBV?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "SKT, 글로벌 AI 컴퍼니 도약 위해 구성원 AI 역량 강화 나선다",
+            "date": "2026.04.07",
+            "source": "SK텔레콤 뉴스룸",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9sNXNJUnVfbDRzOHhrSGpzQmFkZjFQVmpwVk5NNFFUV3hGUVhhbS11YXZfTGJ5R3h4bHBnS2hKOTJ1Qk9jdXBVcw?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "\"학력·소득 따른 AI리터러시 격차 줄어…연령 영향은 여전\"",
+            "date": "2026.04.07",
+            "source": "연합뉴스",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5IQWNaZVVWeGJRdkFTSFJqN3R5N2lsSXd2VG9rRi1uRE90dGdKa1JiWm9lUC1tZXJwLVlyTmNxRjFXM05rOXhlZXd4TlNVT2lYVS1yTndOV3poU2_SAWBBVV95cUxONXpWclFRdUFoTV9BZlRuQWdjWVg3Zkx1ZUJfXzVpUGQzeW5GRmk3Q012dnZqWHVmWkMzRFBaMGJCRTMwRXJ3OEdWdG1HVFQ5dWhvdFc5NXRSUkFQeklUa1M?oc=5",
+            "category": "paper",
+            "type": "paper"
+        },
+        {
+            "title": "[지방선거 D-180] AI 시대 교육, 시험 방식부터 바꿔야",
+            "date": "2026.04.07",
+            "source": "인천투데이",
+            "summary": "'AI 리터러시 교육 논문'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IY05lT2RDNlp5QjhpYkN2eVNBYk9fa3BIZUpjajFWd3Nnajh1eXVQeHRydnhYdFpuQlJMS19oSFF1LTZFbFREck9fRThCQkdhSjlkR2pTcFFEd3NCZFVmMmQ5dGo2NlE4NWV4bjJsbUM?oc=5",
             "category": "paper",
             "type": "paper"
         }
     ],
     "book": [
         {
-            "title": "추천 도서 목록을 준비하고 있습니다",
+            "title": "커뮤니케이션북스, AI문고 2026년 4월 1주 신간 5종 출간",
             "date": "2026.04.07",
-            "source": "시스템 알림",
-            "summary": "예비 교사를 위한 AI 교육 필독서 정보를 정리 중입니다.",
-            "link": "#",
+            "source": "인천신문",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9fSS0tYVRVRmQ5VmI2WHM0RnVtZlR4Y01HV19fUW93ZVpESHZGeGJiZTV2MVdHdHRaajhKRFJDREt4ZmJHQXlHSjU4aWNyaW5jZUFMaUlnc19FcXRtSkJhODY4cXdoVXhiUThDNUp2MWQ0N3Zp0gF4QVVfeXFMT0x0Sjd2WlU5YzRkNFBTaTMtWXYwS0Zsd0JhU1drUll1VDdvSmh2SmVXZ0dPTS1lcEEwWmdZSUs2WGVtM2E3cHpSUmdTRnBZMkU5MGdsLWJoY0ZFQi1fNGt6MGJqeUFyNENlbmdHU3Q4UVdRWV9ldHFk?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "“AI 에이전트 도입, 변하지 않는 대학은 사라질 것”",
+            "date": "2026.04.07",
+            "source": "교수신문",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MN0lrazBJbkJlX0V1blh4MHpIbDIwM0tpMnhKZlB5YkRaUmdrYmRwZ0lSeW1MODhZMU5YdEdkT3ZtTWlnY21MUDdBc25iU0JLXzJkeEpTR0dqc1pIbUdqUDN5OTl4Sk0?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "올해 신간 224종 제목에 'AI'…책 제목이 말한 2025년",
+            "date": "2026.04.07",
+            "source": "nocutnews.co.kr",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qUWp4TUZtOEQ0Z2lFaUtrby1UYjRJRVJ2SXBZVFFIYW5wb0U4VkQ5aEEyTVh3T0trVWQxQXZONzZNZV9aRWJEN3AtTTZzTnFZNGc?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "[신간산책] '서울대학교 AI융합교육학과 인공지능 수업 가이드'",
+            "date": "2026.04.07",
+            "source": "베리타스알파",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFByczBDeGpKN0hGR0hZT2o1MTJzVUcxMUdrU0RNNGtOYV9KbGxyX2U0UG9wcGZCTEQ1elJ4Mjg2bDdTS3EtUGptSnAtWWZBNHlLUmZXWXI1SXQxcHNoM18wS1JfTDd2ZUl2THdVSQ?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "[신간] 인공지능윤리교육학:그 이론과 실제",
+            "date": "2026.04.07",
+            "source": "지디넷코리아",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB1b2NscGRYNVZiTjBtOWd0TVhYOXNLMXgwN0RhTjkwT2Jya3oweThMVlhPVFZlT002c0prci1oNVdLdmlqWGxsRDVrT0hwZzhzcURuM2NB?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "[화제의 신간] 도서출판 은누리, ‘해운대에 북극곰이 산다고요?’ 출간 外",
+            "date": "2026.04.07",
+            "source": "베이비뉴스",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fUGlRaXQzQXRvTmhPcjhtaV9FLS12YklLN2lfMGtILWgwUGM1cU9MQVpJQ1VadGt2U2R6QWtnLWlsdGhjb3BBVW9vbjI4NS0wdVRRQm4ta2lFSk5SdzhQTGkySWc5dlk?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "[신간] 기술이 아이를 살릴 수 있을까?",
+            "date": "2026.04.07",
+            "source": "대한뉴스방송",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ldmdTbUNGTFZEcVRFdlFDSVRtcWNmeDJFdFpqUUVvUmU5TTZObnlhbUZDLXBENzd3LVA5RzB5ZVdiTzdsaWJuOUVjTWNsSHUtRkJFdzZSbHh3cDg5VTVQTjljdmdKNXZHN0NR?oc=5",
+            "category": "book",
+            "type": "book"
+        },
+        {
+            "title": "AI 시대 부모의 불안을 기회로… 포도북스, 신간 ‘AI 시대, 아빠는 불안하다’ 출간",
+            "date": "2026.04.07",
+            "source": "뉴스탭",
+            "summary": "'인공지능 교육 도서 신간'와(과) 관련된 최신 소식입니다.",
+            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE12eFhBQmtIQjFnT2NzWFhlelcyZXhZdzhQVXdEeE9EYVVEQWVGRVVGV0t4VFBnWkdHMzM0cTBGWm01c1BPUmN1b0NOVGhGUmRQZjllbDhoNTBzallKRExjYUVCdmw1OEZQR1p5aA?oc=5",
             "category": "book",
             "type": "book"
         }
