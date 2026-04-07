@@ -46,79 +46,68 @@
     </div>
 
     <script>
-        let libraryData = [];
+    let libraryData = { article: [], paper: [], book: [] };
 
-        // 데이터 가져오기 (GitHub에서 생성된 data.json 읽기)
-        async function fetchLatestData() {
-            try {
-                // 캐시 방지를 위해 랜덤 쿼리 추가
-                const response = await fetch('data.json?t=' + new Date().getTime());
-                if (!response.ok) throw new Error('파일 없음');
-                
-                const data = await response.json();
-                
-                // 데이터가 객체 형태({news:[]})인지 배열 형태([...])인지 체크하여 통일
-                libraryData = Array.isArray(data) ? data : (data.news || data.article || []);
-                
-                filterLibrary('all');
-            } catch (error) {
-                console.error("데이터 로드 실패:", error);
-                document.getElementById('libraryList').innerHTML = `
-                    <div class="col-span-full text-center py-20 bg-white rounded-[2rem] border border-dashed border-slate-200">
-                        <p class="text-slate-400 font-medium">아직 업데이트된 자료가 없습니다.</p>
-                        <p class="text-xs text-slate-300 mt-2">매일 오전 7시에 새로운 데이터가 생성됩니다.</p>
-                    </div>`;
-            }
-        }
-
-        function filterLibrary(category) {
-            // 버튼 상태 변경
-            document.querySelectorAll('.filter-btn').forEach(b => {
-                b.classList.remove('active', 'bg-white', 'text-blue-600', 'shadow-sm');
-                b.classList.add('text-slate-500');
-            });
-            const targetBtn = document.getElementById(`f-${category}`);
-            targetBtn.classList.add('active');
-            targetBtn.classList.remove('text-slate-500');
-
-            const list = document.getElementById('libraryList');
-            list.innerHTML = "";
+    async function fetchLatestData() {
+        try {
+            // 캐시 방지를 위해 랜덤 타임스탬프를 붙여 data.json을 불러옵니다.
+            const response = await fetch('data.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error('데이터 로드 실패');
             
-            // 필터링 작업
-            const items = category === 'all' 
-                ? libraryData 
-                : libraryData.filter(item => (item.type === category || item.category === category));
+            const data = await response.json();
+            
+            // 데이터 유무와 상관없이 구조를 할당 (없으면 빈 배열)
+            libraryData.article = data.article || data.news || [];
+            libraryData.paper = data.paper || [];
+            libraryData.book = data.book || [];
 
-            if (!items || items.length === 0) {
-                list.innerHTML = "<p class='col-span-full text-center py-20 text-slate-400'>해당 카테고리의 자료가 없습니다.</p>";
-                return;
-            }
+            // 초기 화면으로 '기사' 탭 출력
+            filterLibrary('article');
+        } catch (error) {
+            console.error("Error:", error);
+            document.getElementById('libraryList').innerHTML = 
+                "<p class='col-span-full text-center py-20 text-slate-400'>데이터를 불러올 수 없습니다. 잠시 후 새로고침 해주세요.</p>";
+        }
+    }
 
-            // 카드 출력
-            items.forEach(item => {
-                const typeLabel = (item.type || item.category || 'news').toUpperCase();
-                const card = `
-                    <div class="card-anim bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center gap-2 mb-4">
-                                <span class="px-2.5 py-1 bg-blue-50 text-blue-600 text-[10px] font-black rounded-lg">${typeLabel}</span>
-                                <span class="text-[11px] text-slate-400 font-medium">${item.date || '최신 자료'}</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-3 leading-snug hover:text-blue-600 transition-colors cursor-pointer">
-                                <a href="${item.link}" target="_blank">${item.title}</a>
-                            </h3>
-                            <p class="text-slate-500 text-sm line-clamp-3 mb-6 leading-relaxed">${item.description || item.summary || '상세 내용을 확인하려면 원문 보기를 클릭하세요.'}</p>
-                        </div>
-                        <div class="flex items-center justify-between mt-auto pt-4 border-t border-slate-50">
-                            <span class="text-xs text-slate-400">${item.source || 'AI EDU.'}</span>
-                            <a href="${item.link}" target="_blank" class="text-sm font-bold text-blue-600 hover:underline">원문 보기 →</a>
-                        </div>
-                    </div>`;
-                list.insertAdjacentHTML('beforeend', card);
-            });
+    function filterLibrary(category) {
+        // 모든 필터 버튼 초기화
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active', 'bg-white', 'text-blue-600', 'shadow-sm');
+            btn.classList.add('text-slate-500');
+        });
+
+        // 현재 선택된 버튼 활성화 (id가 f-news인 경우와 f-article인 경우 모두 대응)
+        const activeBtn = document.getElementById(`f-${category}`) || document.getElementById('f-news');
+        if (activeBtn) {
+            activeBtn.classList.add('active', 'bg-white', 'text-blue-600', 'shadow-sm');
+            activeBtn.classList.remove('text-slate-500');
         }
 
-        window.onload = fetchLatestData;
-    </script>
+        const list = document.getElementById('libraryList');
+        list.innerHTML = "";
+        
+        const items = libraryData[category] || [];
+
+        // 데이터 반복 출력
+        items.forEach(item => {
+            const card = `
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-100 flex flex-col gap-4 shadow-sm transition-all hover:shadow-md">
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">${item.source} · ${item.date}</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-3 text-slate-900">${item.title}</h3>
+                        <p class="text-slate-500 leading-relaxed mb-6">${item.summary || item.description}</p>
+                        ${item.link !== '#' ? 
+                            `<a href="${item.link}" target="_blank" class="inline-block bg-slate-900 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-blue-600 transition-colors">원문 보기</a>` 
+                            : `<span class="inline-block bg-slate-100 text-slate-400 px-6 py-3 rounded-xl font-bold text-sm">준비 중</span>`
+                        }
+                    </div>
+                </div>`;
+            list.insertAdjacentHTML('beforeend', card);
+        });
+    }
+
+    window.onload = fetchLatestData;
+</script>
 </body>
 </html>
