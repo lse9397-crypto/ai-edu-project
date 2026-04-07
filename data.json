@@ -1,5 +1,26 @@
 {
-    "news": [],
+    "news": [
+        {
+            "title": "AI 교육 최신 트렌드를 확인하세요",
+            "date": "2026.04.07",
+            "source": "시스템 알림",
+            "summary": "현재 자동 수집 기능이 대기 중입니다. 곧 최신 기사가 업데이트됩니다.",
+            "link": "https://www.naver.com",
+            "category": "article",
+            "type": "article"
+        }
+    ],
+    "article": [
+        {
+            "title": "AI 교육 최신 트렌드를 확인하세요",
+            "date": "2026.04.07",
+            "source": "시스템 알림",
+            "summary": "현재 자동 수집 기능이 대기 중입니다. 곧 최신 기사가 업데이트됩니다.",
+            "link": "https://www.naver.com",
+            "category": "article",
+            "type": "article"
+        }
+    ],
     "paper": [],
     "book": []
 }
