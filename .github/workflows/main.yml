@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
           
       - name: Install Libraries
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 lxml
         
       - name: Run Script
         run: python update_news.py
