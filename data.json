@@ -1,5 +1,14 @@
 {
-    "news": [],
+    "article": [
+        {
+            "type": "article",
+            "title": "테스트용 AI 교육 뉴스입니다",
+            "link": "https://www.naver.com",
+            "date": "2026-04-07",
+            "source": "네이버 뉴스",
+            "summary": "데이터가 정상적으로 화면에 출력되는지 확인하기 위한 샘플 문구입니다."
+        }
+    ],
     "paper": [],
     "book": []
 }
